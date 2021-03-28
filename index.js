@@ -23,3 +23,11 @@ openModal.addEventListener("click", () =>{
 closeModal.addEventListener("click", () =>{
     modal.style.display = "none";
 });
+
+const select = document.getElementById("texture-selector");
+const textureBackground = document.getElementById("texture-background");
+
+
+select. addEventListener("change", (event) => {
+textureBackground.style.backgroundImage = `url('${event.target.value}')`
+});
